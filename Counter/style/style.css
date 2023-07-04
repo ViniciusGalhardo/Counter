@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #18181b;
+}
+
+body.light{
+    background-color: #83e6ff;
+}
+
+.counter{
+    background-color: #262626;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.counter.light{
+    background-color: #fff;
+}
+
+.counter h2{
+    display: flex;
+    color: #fff;
+    font-weight: 200;
+    font-size: 2.5rem;
+    justify-content: center;
+}
+
+.counter div{
+    display: flex;
+    align-items: center;
+}
+
+.value{
+    font-size: 8rem;
+    color: #fff;
+    min-width: 14rem;
+    text-align: center;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+.count-button{
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    background-color: #18181b;
+    margin-right: 1rem;
+}
+
+.count-button:last-child {
+    margin-right: 0rem;
+    margin-left: 1rem;
+}
+
+.reset{
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: #3730a3;
+    padding: .8rem 0;
+    margin-top: 1rem;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform .2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #ffe600;
+}
+
+.fa-sun{
+    color: rgb(255, 148, 60);
+}
